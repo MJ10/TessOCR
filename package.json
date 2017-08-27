@@ -1,0 +1,21 @@
+{
+  "name": "tessocr",
+  "version": "1.0.0",
+  "description": "web app to recognize characters in image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ocr"
+  ],
+  "author": "Moksh Jain",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "multer": "^1.3.0",
+    "node-tesseract": "^0.2.7"
+  }
+}
