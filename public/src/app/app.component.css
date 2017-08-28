@@ -1,0 +1,28 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    align-content: center;
+}
+
+.image {
+    align-self: center;
+    margin: 1em;
+}
+
+.image-select {
+    align-self: center;
+    margin: 1em;
+}
+
+.upload-button {
+    align-self: center;
+    margin: 1em;
+}
+
+.result {
+    margin: 1em;
+    align-self: center;
+    font-size: xx-large;
+    text-align: center;
+}
