@@ -14,7 +14,7 @@ router.post('/ocr', (req, res, next) => {
     let path = '';
 
     // Upload file to server
-    upload(req, res, function (err) {
+    upload(req, res, (err) => {
         if (err) {
             // An error occurred when uploading
             console.log(err);
@@ -49,8 +49,7 @@ router.post('/ocr', (req, res, next) => {
                     }
                 });
 
-            })
-
+            });
     });
 });
 

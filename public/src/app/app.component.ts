@@ -1,5 +1,7 @@
 import { ImageService } from './image.service';
 import { Component, ElementRef } from '@angular/core';
+import { MdDialog } from '@angular/material';
+
 
 @Component({
     selector: 'app-root',
@@ -8,10 +10,10 @@ import { Component, ElementRef } from '@angular/core';
 })
 export class AppComponent {
 
-    image_url: String = '';
+    image_url: String = '/assets/placeholder.jpg';
     result: String = '';
 
-    constructor(public imageService: ImageService, public el: ElementRef) { }
+    constructor(public imageService: ImageService, public el: ElementRef, public dialog: MdDialog) { }
 
     // Check if file is selected and then upload image
     upload() {
@@ -42,4 +44,31 @@ export class AppComponent {
         }
     }
 
+    viewAboutDialog() {
+        this.dialog.open(AboutDialogComponent);
+    }
+
 }
+
+@Component({
+    selector: 'app-about-dialog',
+    template: `
+        TessOCR is a simple application which extracts text data from a given image.
+        <h4>Libraries:</h4>
+        <ul>
+            <li><a href="https://www.npmjs.com/package/node-tesseract">node-tesseract</a></li>
+            <li><a href="https://angular.io">Angular 4</a></li>
+            <li><a href="https://www.npmjs.com/package/express">Express</a></li>
+            <li><a href="https://www.npmjs.com/package/multer">multer</a></li>
+            <li><a href="https://material.angular.io">Angular Material</a></li>
+            <li><a href="https://www.npmjs.com/package/gm">gm</a></li>
+        </ul>
+
+        <h4>Software:</h4>
+        <ul>
+            <li><a href="https://github.com/tesseract-ocr/tesseract ">Tesseract OCR</a></li>
+            <li><a href="https://graphicsmagick.org">GraphicsMagick</a></li>
+        </ul>
+    `
+})
+export class AboutDialogComponent {}

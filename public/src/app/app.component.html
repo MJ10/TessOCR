@@ -1,20 +1,23 @@
-<!--<md-toolbar color="primary" class="mat-elevation-z6" style="position: fixed;">
-  <b><a routerLink="/" style="text-decoration: none; color: #fff;"> < name > </a></b>
-  <span class="spacer"></span>
-  <button md-icon-button [mdMenuTriggerFor]="menu"><md-icon>more_vert</md-icon></button>
-  <md-menu #menu="mdMenu">
-    <button md-menu-item (click)="viewAboutDialog()">
+<md-toolbar color="primary" class="mat-elevation-z6" style="position: fixed;">
+    <b><a routerLink="/" style="text-decoration: none; color: #fff;">TessOCR</a></b>
+    <span class="spacer"></span>
+    <button md-icon-button [mdMenuTriggerFor]="menu"><md-icon>more_vert</md-icon></button>
+    <md-menu #menu="mdMenu">
+        <button md-menu-item (click)="viewAboutDialog()">
       <span>About</span>
     </button>
-  </md-menu>
-</md-toolbar>-->
+    </md-menu>
+</md-toolbar>
 
 <div class="main">
 
     <img class="image" width="300" [src]="image_url">
 
-    <input id="photo" class="image-select" type="file" (change)="displayImage($event)" #fileInput placeholder="Upload file..." />
-    <button class="upload-button" type="button" (click)="upload()">Upload</button>
+    <div class="image-select">
+        <button md-raised-button (click)="fileInput.click()">Select Image</button>
+        <input id="photo" class="image-select" type="file" (change)="displayImage($event)" #fileInput />
+    </div>
+    <button md-fab color="primary" class="upload-button" type="button" (click)="upload()"><md-icon>file_upload</md-icon></button>
 
     <pre class="result">{{result}}</pre>
 

@@ -1,24 +1,31 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-// import { MdToolbarModule, MdButtonModule, MdIconModule } from '@angular/material';
+import { MdToolbarModule, MdButtonModule, MdIconModule,
+            MdMenuModule, MdDialogModule } from '@angular/material';
 
-import { AppComponent } from './app.component';
+import { AboutDialogComponent, AppComponent } from './app.component';
 import { ImageService } from './image.service';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        AboutDialogComponent
     ],
     imports: [
         BrowserModule,
         HttpModule,
-        // MdToolbarModule,
-        // MdButtonModule,
-        // MdIconModule
+        MdToolbarModule,
+        MdButtonModule,
+        MdIconModule,
+        MdMenuModule,
+        BrowserAnimationsModule,
+        MdDialogModule
     ],
     providers: [ImageService],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    entryComponents: [AboutDialogComponent]
 })
 export class AppModule { }

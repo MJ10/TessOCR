@@ -1,18 +1,25 @@
 .main {
     display: flex;
     flex-direction: column;
-    margin-top: 1em;
     align-content: center;
+}
+
+.spacer {
+    flex: 1 1 auto;
 }
 
 .image {
     align-self: center;
-    margin: 1em;
+    margin-top: 5em;
 }
 
 .image-select {
     align-self: center;
     margin: 1em;
+}
+
+#photo {
+    display: none;
 }
 
 .upload-button {
