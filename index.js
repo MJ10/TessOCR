@@ -11,7 +11,7 @@ app.use(cors());
 // Use routes for api endpoint
 app.use('/api', api);
 
-var port = 3000;
+var port = process.env.PORT || 8080;
 
 // Listen on port 3000
 app.listen(port, () => {
