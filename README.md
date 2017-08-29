@@ -12,7 +12,7 @@ A live demo of the app can be found [here](https://tessocr.herokuapp.com)
 * `leptonica`
 * `node`
 * `GraphicsMagick` 
-Detailed instructions on setting up the build environment can be found in the [CONTRIBUTING.md](https://github.com/MJ10/Cosmo/blob/master/CONTRIBUTING.md) file.
+Detailed instructions on setting up the build environment can be found in the [CONTRIBUTING.md](https://github.com/MJ10/TessOCR/blob/master/CONTRIBUTING.md) file.
 ### Installing Dependencies
 * Clone the repository to your machine.
 * Run `npm install` in the root of the project.
@@ -28,7 +28,7 @@ This builds the Angular app in `/dist` directory.
 * The app is now available at `http://localhost:8080`
 
 ## Contributing
-The detailed instructions on how to contribute to the project can be found in the [CONTRIBUTING.md](https://github.com/MJ10/Cosmo/blob/master/CONTRIBUTING.md) file.
+The detailed instructions on how to contribute to the project can be found in the [CONTRIBUTING.md](https://github.com/MJ10/TessOCR/blob/master/CONTRIBUTING.md) file.
 
 ## License
 This project is licensed under the [MIT License](https://github.com/MJ10/TessOCR/blob/master/LICENSE.md)
