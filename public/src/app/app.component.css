@@ -18,6 +18,12 @@
     margin: 1em;
 }
 
+md-spinner {
+    width: 50px;
+    align-self: center;
+    display: none;
+}
+
 #photo {
     display: none;
 }

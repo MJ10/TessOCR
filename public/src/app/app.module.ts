@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { MdToolbarModule, MdButtonModule, MdIconModule,
-            MdMenuModule, MdDialogModule } from '@angular/material';
+            MdMenuModule, MdDialogModule, MdProgressSpinnerModule } from '@angular/material';
 
 import { AboutDialogComponent, AppComponent } from './app.component';
 import { ImageService } from './image.service';
@@ -21,6 +21,7 @@ import { ImageService } from './image.service';
         MdButtonModule,
         MdIconModule,
         MdMenuModule,
+        MdProgressSpinnerModule,
         BrowserAnimationsModule,
         MdDialogModule
     ],

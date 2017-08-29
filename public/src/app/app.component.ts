@@ -9,7 +9,6 @@ import { MdDialog } from '@angular/material';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
     image_url: String = '/assets/placeholder.jpg';
     result: String = '';
 
@@ -69,6 +68,8 @@ export class AppComponent {
             <li><a href="https://github.com/tesseract-ocr/tesseract ">Tesseract OCR</a></li>
             <li><a href="https://graphicsmagick.org">GraphicsMagick</a></li>
         </ul>
+
+        Made By: Moksh Jain
     `
 })
 export class AboutDialogComponent {}
