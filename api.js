@@ -2,7 +2,7 @@
 const multer = require('multer');
 const fs = require('fs');
 const gm = require('gm');
-const tesseract = require('node-tesseract');
+const tesseract = require('./lib/node-tesseract');
 const router = require('express').Router();
 
 // Initilialize multer module to store
