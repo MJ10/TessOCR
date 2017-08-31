@@ -8,6 +8,9 @@ A live demo of the app can be found [here](https://tessocr.herokuapp.com)
 
 The basic functionality of the application is demonstrated in [this video](https://drive.google.com/file/d/0B3aErC87s04CSGRaaXJhVF9pRDQ/view?usp=sharing)
 
+## Limitations
+The accuracy of the application is limited by the underlying Tesseract Engine. Even though Tesseract is one of the most accurate OCR engines, it is not perfect. For example, if the image contains text in a font that is unrecognisable to Tesseract, the application fails to load a result. The application might also fail to produce an accurate result if the image contains text in different orientations. The prediction is also affected by the lighting and contrast in the image. 
+
 ## Usage
 ### Prerequisites
 * `tesseract`
