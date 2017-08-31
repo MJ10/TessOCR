@@ -6,12 +6,14 @@ This application was built as a part of the recruitment process for the Web and 
 
 A live demo of the app can be found [here](https://tessocr.herokuapp.com)
 
+The basic functionality of the application is demonstrated in [this video](https://drive.google.com/file/d/0B3aErC87s04CSGRaaXJhVF9pRDQ/view?usp=sharing)
+
 ## Usage
 ### Prerequisites
 * `tesseract`
 * `leptonica`
-* `node`
 * `GraphicsMagick` 
+* `node` with Angular CLI installed globally.
 Detailed instructions on setting up the build environment can be found in the [CONTRIBUTING.md](https://github.com/MJ10/TessOCR/blob/master/CONTRIBUTING.md) file.
 ### Installing Dependencies
 * Clone the repository to your machine.

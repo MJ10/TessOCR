@@ -43,7 +43,17 @@ make
 sudo make install
 sudo ldconfig
 ```
-We have now installed Tesseract, and can use it from the terminal with the `tesseract` command.
+We have now installed Tesseract, but it is still not ready to use. We first need to set up the TessData.
+You can clone the data for all languages, from [here](https://github.com/tesseract-ocr/tessdata)
+For the purposes of this application, we will be using only English. So you can download the latest tessdata for English from [here](https://github.com/tesseract-ocr/tessdata/blob/master/eng.traineddata)
+
+Now, to set up the tessdata, set the `TESSDATA_PREFIX` environment variable to the directory containing the tessdata file.
+```bash
+export TESSDATA_PREFIX=/path/to/directory/with/tessdata
+```
+You can also add it to your `.bashrc` file to ensure that it executes on every boot.
+
+Tesseract is now fully installed and configured and ready to use.
 
 ### Setting up GraphicsMagick
 The application uses GraphicsMagic for some processing on the image before it is fed to tesseract.
@@ -87,6 +97,13 @@ make -jX # X is number of concurrent compilation jobs
 sudo make install
 ```
 This will install NodeJS and npm(node package manager)
+
+### Installing Angular CLI
+The Angular CLI is required for building the front-end.
+It can be easily installed using npm.
+```bash
+[sudo] npm install -g @angular/cli
+```
 
 The build environment is now set up. You can run the app as follows:
 ### Installing npm Dependencies
